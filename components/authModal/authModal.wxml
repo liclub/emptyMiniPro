@@ -1,0 +1,24 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-07-01 12:25:58
+ * @LastEditTime: 2019-12-24 13:58:44
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \miniCardProject\components\authModal\authModal.wxml
+ -->
+<!-- 底部导航组件 -->
+<view class="authModal" wx:if="{{showModal}}" catchtouchmove="doNothing">
+		<view class="model-mask"></view>
+		<view class="auth-box">
+				<view class="view-title">登录授权</view>
+				<image class="view-img" src="../../images/pro-log.png"></image>
+				<view class="border-title">申请获取以下权限</view>
+				<view class="viewInfo">获得您的公开信息（昵称、头像、地区及性别）</view>
+				<view class="button-row">
+						<button class="buttonline" bindtap="bindNotAuth">拒绝</button>
+						<button class="buttonline auth-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+								允许
+						</button>
+				</view>
+		</view>
+</view>

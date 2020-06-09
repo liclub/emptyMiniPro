@@ -1,0 +1,5 @@
+<view class="page">
+	<view>首页</view>
+</view>
+<bottomNav checkId="0"></bottomNav>
+<authModal showAuth="{{showAuth}}"></authModal>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#1547ff",
+  "usingComponents": {
+    "bottomNav": "../../components/bottomNav/bottomNav",
+    "authModal": "../../components/authModal/authModal"
+  }
+}

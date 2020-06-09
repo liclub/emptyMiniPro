@@ -1,0 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-24 16:50:29
+ * @LastEditTime : 2019-12-25 17:26:23
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \miniCardProject\pages\webview\webview.wxml
+ -->
+<view class="pages">
+    <web-view src="{{src}}"></web-view>
+</view>

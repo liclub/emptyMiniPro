@@ -1,0 +1,5 @@
+@import "./common/css/common.wxss";
+@import "./common/css/iconfont/iconfont.wxss";
+body {
+  font-size: 28rpx;
+}

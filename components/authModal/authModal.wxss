@@ -1,0 +1,96 @@
+.authModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 99999999999;
+}
+
+.auth-box {
+	background: #fff;
+	width: 80%;
+	margin: 40% 10%;
+	border-radius: 14rpx;
+	text-align: center;
+	z-index: 99999;
+	position: absolute;
+}
+
+.view-title {
+	height: 90rpx;
+	width: 100%;
+	text-align: center;
+	line-height: 90rpx;
+	font-size: 35rpx;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.view-img {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 100%;
+	margin-top: 15rpx;
+}
+
+.border-title {
+	text-align: left;
+	margin: 10px;
+	font-size: 31rpx;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 10rpx 0;
+	margin-top: 0;
+	padding-bottom: 20rpx
+}
+
+.viewInfo {
+	text-align: left;
+	margin: 10rpx;
+	font-size: 29rpx;
+	color: #999;
+	padding-left: 10rpx;
+	padding-bottom: 56rpx;
+}
+
+.button-row {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-top: 1px solid #f4f4f4;
+	height: 90rpx;
+	font-size: 35rpx;
+}
+
+.buttonline {
+	flex: 1;
+	background: #fff !important;
+}
+
+.buttonline:first-child {
+	border-right: 1rpx solid #f4f4f4;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	font-size: 30rpx;
+}
+
+.model-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .3);
+	z-index: 99999;
+}
+
+.buttonline:last-child {
+	color: #21b922;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	font-size: 30rpx;
+}
+.buttonline::after {
+	border: none !important;
+}
