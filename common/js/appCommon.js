@@ -30,13 +30,13 @@ let getUserToken = (cb, fail) => {
       // }
     },
     fail: function (res) {
-      wx.showToast({ title: '微信登入失败' })
+      wx.showToast({ title: '微信登入失败', icon: 'none' })
     }
   })
 }
 let toLogin = (userinfo, fun) => {
   if (!wx.getStorageSync("token")) {
-    wx.showToast({ title: '登入失败，请重新登入' })
+    wx.showToast({ title: '登入失败，请重新登入', icon: 'none' })
     wx.clearStorage();
     getUserToken();
   }

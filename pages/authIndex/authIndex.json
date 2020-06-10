@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "授权",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "auth-modal": "../../components/authModal/authModal"
+  }
+}

@@ -3,7 +3,8 @@ var App = getApp();
 Page({
   /*页面的初始数据*/
   data: {
-    titleText: '自定义头部'
+    titleText: '自定义头部',
+    backIcon: '../../images/back.png'
   },
   /**
    * 生命周期函数--监听页面加载

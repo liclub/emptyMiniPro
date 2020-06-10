@@ -1,8 +1,6 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "二维码生成",
   "navigationBarBackgroundColor": "#fff",
   "usingComponents": {
-    "bottom-nav": "../../components/bottomNav/bottomNav",
-    "auth-modal": "../../components/authModal/authModal"
   }
 }

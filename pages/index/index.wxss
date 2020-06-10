@@ -1,6 +1,6 @@
-.qrCanvas {
-	background:#fff;
-	width: 360rpx;
-  height:360rpx;
-  margin: 0 auto;
+.index-box {
+  margin: 0 10px;
+}
+.van-button--block {
+  margin: 10px 0;
 }

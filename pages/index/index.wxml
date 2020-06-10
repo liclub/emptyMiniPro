@@ -1,16 +1,6 @@
-<view class="page">
-	<van-cell title="二维码生成" is-link />
-	<!-- <van-field
-    value="{{fieldQr}}"
-    center
-		clearable
-		bind:change = "setFieldQr"
-    label="二维码地址"
-    placeholder="请输入二维码地址"
-    use-button-slot>
-    <van-button slot="button" size="small" type="primary" bindtap="drawQrcode">生成二维码</van-button>
-	</van-field>
-<canvas style="display:{{qrSuccess?'block':'flex'}},top:{{qrSuccess?'0':'-1000px'}}"  class="canvas qrCanvas" canvas-id="myQrcode"></canvas> -->
+<view class="page index-box">
+  <van-button type="default" block bindtap="switchTap" data-idx="0">二维码生成</van-button>
+  <van-button type="default" block bindtap="switchTap" data-idx="1">底部导航</van-button>
+  <van-button type="default" block bindtap="switchTap" data-idx="2">授权</van-button>
+  <van-button type="default" block bindtap="switchTap" data-idx="3">自定义头部</van-button>
 </view>
-<bottom-nav checkid="0"></bottom-nav>
-<auth-modal showauth="{{showAuth}}"></auth-modal>

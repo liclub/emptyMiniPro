@@ -213,6 +213,11 @@ App({
       typeof callback == "function" && callback();
     }
   },
+  redirectOverPage: function(url) {
+    this.isOverPage(function() {
+      wx.navigateTo({ url: url });
+    })
+  },
   // 页面加载中
   pageLoading: function(msg) {
     var title = msg || "页面加载中";

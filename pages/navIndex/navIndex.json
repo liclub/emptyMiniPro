@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "底部导航",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "bottom-nav": "../../components/bottomNav/bottomNav"
+  }
+}

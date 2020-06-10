@@ -1,4 +1,3 @@
 <view class="page">
-	<header background="transparent" color="#000" titleText="{{titleText}}"></header>
+	<header background="transparent" color="#000" backIcon="{{backIcon}}" titleText="{{titleText}}"></header>
 </view>
-<bottom-nav checkid="1"></bottom-nav>

@@ -3,7 +3,6 @@
   "navigationBarBackgroundColor": "#E83836",
   "navigationStyle": "custom",
   "usingComponents": {
-    "bottom-nav": "../../components/bottomNav/bottomNav",
     "header": "../../components/header/header"
   }
 }

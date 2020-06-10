@@ -1,6 +1,5 @@
 <view class="page">
-	<van-cell title="二维码生成" is-link />
-	<!-- <van-field
+	<van-field
     value="{{fieldQr}}"
     center
 		clearable
@@ -10,7 +9,5 @@
     use-button-slot>
     <van-button slot="button" size="small" type="primary" bindtap="drawQrcode">生成二维码</van-button>
 	</van-field>
-<canvas style="display:{{qrSuccess?'block':'flex'}},top:{{qrSuccess?'0':'-1000px'}}"  class="canvas qrCanvas" canvas-id="myQrcode"></canvas> -->
+<canvas style="display:{{qrSuccess?'block':'flex'}},top:{{qrSuccess?'0':'-1000px'}}"  class="canvas qrCanvas" canvas-id="myQrcode"></canvas>
 </view>
-<bottom-nav checkid="0"></bottom-nav>
-<auth-modal showauth="{{showAuth}}"></auth-modal>
