@@ -34,5 +34,7 @@
 	left: 50%; 
 	top: 50%; 
 	font-size: 0; 
-	font-weight: bold;
+ }
+ .nav-title text{
+	 font-size: 25rpx;
  }

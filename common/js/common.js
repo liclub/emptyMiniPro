@@ -1,7 +1,52 @@
 var App = getApp();
+import drawQrcode from '../../utils/weapp.qrcode.js' // 二维码
 
 const fsm = wx.getFileSystemManager();
-// const FILE_BASE_NAME = 'tmp_base64src';
+// width	必须，二维码宽度，与canvas的width保持一致	200
+// height	必须，二维码高度，与canvas的height保持一致	200
+// canvasId	非必须，绘制的canvasId	'myQrcode'
+// ctx	非必须，绘图上下文，可通过 wx.createCanvasContext('canvasId') 获取，v1.0.0+版本支持	'wx.createCanvasContext('canvasId')'
+// text	必须，二维码内容	'https://github.com/yingye'
+// typeNumber	非必须，二维码的计算模式，默认值-1	8
+// correctLevel	非必须，二维码纠错级别，默认值为高级，取值：{ L: 1, M: 0, Q: 3, H: 2 }	1
+// background	非必须，二维码背景颜色，默认值白色	'#ffffff'
+// foreground	非必须，二维码前景色，默认值黑色	'#000000'
+// _this	非必须，若在组件中使用，需要传入，v0.7.0+版本支持	this
+// callback	非必须，绘制完成后的回调函数，v0.8.0+版本支持。安卓手机兼容性问题，可通过自行设置计时器来解决，更多可以参考 issue #18	function (e) { console.log('e', e) }
+// x	非必须，二维码绘制的 x 轴起始位置，默认值0，v1.0.0+版本支持	100
+// y	非必须，二维码绘制的 y 轴起始位置，默认值0，v1.0.0+版本支持	100
+// image	非必须，在 canvas 上绘制图片，层级高于二维码，v1.0.0+版本支持，更多可参考drawImage	{ imageResource: '', dx: 0, dy: 0, dWidth: 100, dHeight: 100 }
+const initDraw = {
+  width: 160,
+  height: 160,
+  x: 20, 
+  y: 20,
+  canvasId: 'myQrcode',
+  text: '',
+  correctLevel: 0,
+  image: {
+    imageResource: '../../images/pro-log.png',
+    dx: 80,
+    dy: 80,
+    dWidth: 40,
+    dHeight: 40
+  },
+  callback(e) {
+    console.log('e', e)
+  }
+};
+
+const canvasTopath = function(canvsId) {
+  wx.canvasToTempFilePath({
+    x: 0,
+    y: 0,
+    canvasId: canvsId,
+    success: function (res) {
+      console.log(res)
+    },
+    fail: function (res) {}
+  })
+}
 
 const base64src = function (base64data, FILE_BASE_NAME) {
   return new Promise((resolve, reject) => {
@@ -70,6 +115,11 @@ const isArray = function (o) {
   return o != null && typeof o == "object" && 'splice' in o && 'join' in o;
 };
 
+const tapHandler = function(option) {
+  // https://github.com/yingye/weapp-qrcode
+  extend(initDraw,option,true);
+  drawQrcode(initDraw);
+}
 
 module.exports = {
   base64src,
@@ -77,5 +127,6 @@ module.exports = {
   urlTobase64,
   rpx2px,
   toBase64,
-  isArray
+  isArray,
+  tapHandler
 }

@@ -1,29 +1,28 @@
-/*
- * @Descripttion:
- * @version: 1.0
- * @Author: lhy
- * @Date: 2019-07-01 12:25:58
- * @LastEditors: lhy
- * @LastEditTime: 2019-12-10 18:16:50
- */
-// 获取地址列表
-var commonAjax = function(param, successCallback, failCallback) {
-  var serverCallback = getApp().serverCallback;
-  wx.showLoading({
-    title: "加载中"
-  });
+// 请求接口方法
+const commonAjax = function(param,type,successCallback, failCallback) {
+  const serverCallback = getApp().serverCallback;
+  wx.showLoading({ title: "加载中" });
   wx.request({
     url: getApp().globalData.apiBaseURL,
     header: {
       'cookie': 'SESSION='+wx.getStorageSync("authCode"), // 默认值
     },
     data: param,
-    method: "POST",
+    method: type,
     success: serverCallback(successCallback, failCallback),
     fail: serverCallback("undefined", failCallback)
   });
 };
 
+const POST = function(param, successCallback, failCallback) {
+  commonAjax(param, "POST", successCallback, failCallback);
+};
+
+const GET = function(param, successCallback, failCallback) {
+  commonAjax(param, "GET", successCallback, failCallback);
+};
+
 module.exports = {
-  commonAjax: commonAjax
+  POST: POST,
+  GET: GET
 };

@@ -26,7 +26,7 @@ Component({
     },
     fontSize: {
       type: Number,
-      value: 16
+      value: 13
     },
     iconHeight: {
       type: Number,

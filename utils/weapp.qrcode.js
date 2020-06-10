@@ -1439,7 +1439,6 @@
       if (options.image.imageResource) {
         ctx.drawImage(options.image.imageResource, options.image.dx, options.image.dy, options.image.dWidth, options.image.dHeight);
       }
-
       ctx.draw(false, function (e) {
         options.callback && options.callback(e);
       });

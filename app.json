@@ -1,18 +1,25 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/qrIndex/qrIndex",
+    "pages/customerHeader/customerHeader",
     "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "",
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#f0f3f6"
   },
   "debug": true,
   "requiredBackgroundModes": [
     "audio"
   ],
+  "usingComponents": {
+    "van-field": "vant-weapp/field/index",
+    "van-button": "vant-weapp/button/index",
+    "van-cell": "vant-weapp/cell/index"
+  },
   "sitemapLocation": "sitemap.json"
 }

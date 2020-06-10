@@ -60,6 +60,12 @@
 					"pathName": "pages/webview/webview",
 					"query": "url=https://baidu.com",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/customerHeader/customerHeader",
+					"pathName": "pages/customerHeader/customerHeader",
+					"scene": null
 				}
 			]
 		}

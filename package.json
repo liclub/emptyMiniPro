@@ -1,0 +1,22 @@
+{
+  "name": "emptyminipro",
+  "version": "1.0.0",
+  "description": "基于原生的空壳小程序（UI框架vant）",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liclub/emptyMiniPro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liclub/emptyMiniPro/issues"
+  },
+  "homepage": "https://github.com/liclub/emptyMiniPro#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.28"
+  }
+}

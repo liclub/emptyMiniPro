@@ -6,7 +6,7 @@ App({
   globalData: {
     userInfo: null, // 微信用户信息
     apiBaseURL: "", // 接口地址
-    appid: "wx3dcc583a7bbe22fa", // appId
+    appid: "wxa411024686dd355e", // appId
     screenHeight: "", // 屏幕高度
     screenWidth: "", // 屏幕宽度
     firstPage: "", // 首页地址

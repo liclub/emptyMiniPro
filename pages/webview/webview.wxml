@@ -9,3 +9,4 @@
 <view class="pages">
     <web-view src="{{src}}"></web-view>
 </view>
+

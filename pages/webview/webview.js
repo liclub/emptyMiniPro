@@ -12,7 +12,6 @@ Page({
     src: ""
   },
   onLoad: function (options) {
-    
     let _this = this
     let url = decodeURIComponent(options.url);
     // let uid = options.uid;
