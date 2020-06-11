@@ -1,0 +1,43 @@
+<view class="page" style="background: #1a222f">
+  <canvas class="canvas-box" canvas-id="shareFrends"></canvas>
+  <view class="content">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+      class="cardswiper" bindchange="bindchange">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+          <view class="card-box">
+            <view class="flex card-content">
+              <view class="flex carduser">
+                <view class="flex uerInfo">
+                  <view class="name name-font">{{userInfo.name}}
+                    <image wx:if="{{status=='6'}}" src="../../images/agentimg.png" class="agenpic" />
+                  </view>
+                  <view class="name">{{userInfo.job}}</view>
+                </view>
+                <image src="{{userInfo.headSrc}}" class="user-img"></image>
+              </view>
+              <view class="flex user-other">
+                <image src="../../images/phone.png" class="small-img"></image>
+                <view class="phone">{{userInfo.mobile}}</view>
+              </view>
+              <view class="flex user-other">
+                <image src="../../images/addressInfo.png" class="small-img addressimg"></image>
+                <view class="name">{{userInfo.company}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="flex qrocde">
+            <!-- <image class="qrcode-img" src="{{erweima}}"></image> -->
+            <view class="qrcode-desc">
+              <view>{{userInfo.userCardName}}小程序码</view>
+              <view>长按识别小程序码保存名片</view>
+              <view class="youlai">名片由无知无畏生成</view>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <button  wx:if="{{ type === '1' }}" class="notCreated-btn" style="margin-top: 40rpx" bindtap="shareFrends">保存图片</button>
+  </view>
+</view>

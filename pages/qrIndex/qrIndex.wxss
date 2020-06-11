@@ -4,3 +4,8 @@
   height:360rpx;
   margin: 0 auto;
 }
+.normal-text {
+  padding: 0 15px;
+  color: #ccc;
+  text-align: center;
+}

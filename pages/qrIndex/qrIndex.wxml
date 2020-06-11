@@ -1,4 +1,5 @@
 <view class="page">
+  <view class="normal-text" wx:if="{{type === '1'}}">长按保存之前请先生成二维码</view>
 	<van-field
     value="{{fieldQr}}"
     center
@@ -9,5 +10,5 @@
     use-button-slot>
     <van-button slot="button" size="small" type="primary" bindtap="drawQrcode">生成二维码</van-button>
 	</van-field>
-<canvas style="display:{{qrSuccess?'block':'flex'}},top:{{qrSuccess?'0':'-1000px'}}"  class="canvas qrCanvas" canvas-id="myQrcode"></canvas>
+<canvas bindlongpress="saveImg" style="display:{{qrSuccess?'block':'flex'}},top:{{qrSuccess?'0':'-1000px'}}"  class="canvas qrCanvas" canvas-id="myQrcode"></canvas>
 </view>

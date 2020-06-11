@@ -50,7 +50,7 @@
 	font-size: 29rpx;
 	color: #999;
 	padding-left: 10rpx;
-	padding-bottom: 6rpx;
+	padding-bottom: 16rpx;
 }
 
 .button-row {

@@ -36,13 +36,13 @@ const initDraw = {
   }
 };
 
-const canvasTopath = function(canvsId) {
+const canvasTopath = function(canvsId, cb) {
   wx.canvasToTempFilePath({
     x: 0,
     y: 0,
     canvasId: canvsId,
     success: function (res) {
-      console.log(res)
+      typeof cb == "function" && cb(res);
     },
     fail: function (res) {}
   })
@@ -121,6 +121,36 @@ const tapHandler = function(option) {
   drawQrcode(initDraw);
 }
 
+const saveImgToCamera = function(img) { // 判断是否开启相册权限
+  wx.getSetting({
+    success(res) {
+      if (!res.authSetting['scope.writePhotosAlbum']) { // 如果没有则获取授权
+        wx.authorize({
+          scope: 'scope.writePhotosAlbum',
+          success() {
+            saveImageToPhotosAlbum(img)
+          },
+          fail() {}
+        })
+      } else {
+        saveImageToPhotosAlbum(img)
+      }
+    }
+  })
+}
+
+const saveImageToPhotosAlbum = function(img) { // 保存图片到相册
+  wx.saveImageToPhotosAlbum({
+    filePath: img,
+    success() {
+      wx.showToast({ title: '保存成功' })
+    },
+    fail() {
+      wx.showToast({ title: '保存失败', icon: 'none' })
+    }
+  })
+}
+
 module.exports = {
   base64src,
   extend,
@@ -128,5 +158,8 @@ module.exports = {
   rpx2px,
   toBase64,
   isArray,
-  tapHandler
+  tapHandler,
+  canvasTopath,
+  saveImgToCamera,
+  saveImageToPhotosAlbum
 }

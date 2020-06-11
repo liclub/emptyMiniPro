@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "轮播图",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "bottom-nav": "../../components/bottomNav/bottomNav"
+  }
+}

@@ -1,0 +1,7 @@
+.headerBg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}

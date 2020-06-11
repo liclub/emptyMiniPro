@@ -4,6 +4,7 @@
     "pages/qrIndex/qrIndex",
     "pages/navIndex/navIndex",
     "pages/authIndex/authIndex",
+    "pages/swiperIndex/swiperIndex",
     "pages/customerHeader/customerHeader",
     "pages/webview/webview"
   ],

@@ -1,0 +1,300 @@
+
+.open-seting-bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.btn-openset {
+	display: flex;
+	justify-content: space-around;
+	font-size: 30rpx;
+	margin-top: 60rpx;
+}
+
+.set-title {
+	font-size: 30rpx;
+	margin-top: 40rpx;
+}
+
+.open-set-inner {
+	width: 400rpx;
+	height: 220rpx;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background: #ffffff;
+	padding: 30rpx;
+}
+
+.btn-openset>view:nth-child(1) {
+	color: #919191;
+}
+
+.button-style {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0 0;
+	font-size: 30rpx;
+	line-height: 0;
+	color: red;
+}
+
+button::after {
+	border: 0;
+}
+
+.card-content {
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: 80rpx;
+	background: #fafafa;
+	width: 96%;
+	height: 96%;
+	margin: 2%;
+}
+
+.card-box {
+	border: 1px solid #e8e8e8;
+	border-top: none;
+	background: #fff;
+	margin: 0 5%;
+	width: 90%;
+	margin-top: -10rpx;
+}
+
+.slide-image {
+	width: 90%;
+	border-top-left-radius: 15rpx;
+	border-top-right-radius: 15rpx;
+	height: 342rpx;
+	margin: 20rpx 5%;
+	margin-bottom: 0;
+}
+
+.cardswiper {
+	height: 500px;
+	background: #fff;
+	margin: 0 50rpx 10px 50px;
+	height: 1000rpx;
+	margin: 0 10%;
+}
+
+.carduser {
+	width: 100%;
+	padding: 20rpx;
+}
+
+.uerInfo {
+	flex: 1;
+	flex-direction: column;
+	padding: 20rpx;
+}
+
+.user-img {
+	width: 100rpx;
+	height: 100rpx;
+	margin-top: 20rpx;
+	/*border-radius:50%;*/
+}
+
+.small-img {
+	width: 35rpx;
+	height: 35rpx;
+	margin-right: 30rpx
+}
+
+.user-other {
+	justify-content: left;
+	width: 100%;
+	padding: 8rpx 20rpx;
+}
+
+.qrocde {
+	padding: 20rpx 30rpx
+}
+
+.qrcode-img {
+	width: 150rpx;
+	height: 150rpx;
+}
+
+.qrcode-desc {
+	flex: 1;
+	text-align: left;
+	padding-left: 30rpx;
+	margin-top: 20rpx;
+}
+
+.card {
+	margin-top: 147rpx;
+	border: 1px solid #ccc;
+	box-shadow: 5px 0px 5px -5px #455aa4, -5px 0px 5px -5px #455aa4;
+	border-bottom: none;
+	border-radius: 0;
+	border-top-left-radius: 30rpx;
+	border-top-right-radius: 30rpx;
+}
+
+.content {
+	background: #1a222f;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.content-next {
+	background: #fff;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.name {
+	color: #5c5c5c
+}
+
+.phone {
+	color: #519d45
+}
+
+.name-font {
+	font-size: 35rpx;
+	font-weight: 600;
+	position: relative
+}
+
+.unname {
+	color: #85b3d1
+}
+
+.youlai {
+	color: #a4a4a4;
+}
+
+.addressimg {
+	height: 35rpx;
+	margin-left: 4rpx;
+}
+
+.newsaveBtn {
+	position: fixed;
+	bottom: 10%;
+	width: 84%;
+	/*background:linear-gradient(to right,#035589, #499dd3)*/
+}
+
+.newqorcoder {
+	margin-top: 431rpx;
+	width: 89%;
+	margin-left: 5%;
+	border-top: 0;
+	padding: 115rpx 0;
+	justify-content: center;
+	align-items: center;
+	border-bottom-left-radius: 30rpx;
+	border-bottom-right-radius: 30rpx;
+	border: 1px solid #ccc;
+	box-shadow: 0 10rpx 10rpx 1rpx #97b0db;
+	position:relative;
+	padding-bottom:54rpx;
+	padding-top:199rpx;
+	position: relative;
+	border-top:none;
+}
+
+.newqorcodeimg {
+	margin-left: 46rpx;
+	width: 200rpx;
+	height: 200rpx;
+}
+
+.newcard {
+	top: 45rpx;
+	height: 424rpx;
+}
+
+.newMainBg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.makeBl {
+	height: 176rpx;
+	background: #1547ff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.makeWh {
+	height: 50rpx;
+	background: #fff;
+	border-top-left-radius: 30rpx;
+	border-top-right-radius: 30rpx;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.agenpic {
+	width:175rpx;
+	height:39rpx;
+	position:absolute;
+	margin-top:7rpx;
+	margin-left:15rpx;
+}
+.agenpic1 {
+	width: 175rpx;
+	height: 39rpx;
+	margin-top: 7rpx;
+	margin-left: 15rpx;
+}
+.title-intro {
+	font-size:30rpx;
+	font-weight:600;
+}
+.intro-box {
+	position: absolute;
+	top: 20rpx;
+	position:absolute;
+	top:68rpx;
+	left:43rpx;
+
+}
+.intro-detail {
+	font-size:24rpx;
+	color:#888;
+	padding-right:20rpx;
+	padding-top:10rpx;
+
+}
+.tipContent {
+	text-align:center;
+	color:#ccc;
+   	padding-top:10px;
+}
+.canvas-box {
+  width: 572px;
+  height: 1000px;
+  margin-top:1500rpx;
+  background:#fff;
+  position: fixed;
+  top: -10000
+}

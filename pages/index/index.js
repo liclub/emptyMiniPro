@@ -34,6 +34,15 @@ Page({
       case '3':
         App.redirectOverPage('/pages/customerHeader/customerHeader');
         return;
+      case '4':
+        App.redirectOverPage('/pages/qrIndex/qrIndex?type=1');
+        return;
+      case '5':
+        App.redirectOverPage('/pages/swiperIndex/swiperIndex');
+        return;
+      case '6':
+        App.redirectOverPage('/pages/swiperIndex/swiperIndex?type=1');
+        return;
     }
   },
   /**

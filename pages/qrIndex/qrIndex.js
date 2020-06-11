@@ -5,13 +5,16 @@ Page({
   /*页面的初始数据*/
   data: {
     fieldQr: "",
-    qrSuccess: false
+    qrSuccess: false,
+    type: ''
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    if (options.type) {
+      this.setData({ type: options.type})
+    }
   },
   setFieldQr(e) {
     this.setData({fieldQr: e.detail})
@@ -25,6 +28,13 @@ Page({
     common.tapHandler({text: this.data.fieldQr, callback(e) {
       _this.setData({ qrSuccess: true })
     }})
+  },
+  saveImg() {
+    //保存图片之前要把图片转成微信本地路径
+    common.canvasTopath('myQrcode', function(res) {
+      let img = res.tempFilePath;
+      common.saveImgToCamera(img)
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
