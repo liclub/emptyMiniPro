@@ -1,2 +1,5 @@
-<view class="page"></view>
-<auth-modal showauth="{{showAuth}}"></auth-modal>
+<view class="page auth-box">
+  <image class="avrImg" src="{{userInfo.avatarUrl}}"></image>
+  <view>{{userInfo.nickName}}</view>
+</view>
+<auth-modal showauth="{{showAuth}}" bind:updateUser="updateUser"></auth-modal>

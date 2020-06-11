@@ -34,11 +34,14 @@ Component({
     getUserInfo: function (e) { //获取用户信息，更新数据库跳转至创建页面
       let that = this;
       if (e && e.detail) {
-        appCommon.toLogin(e.detail, function () {
-          that.setData({
-            showModal: false
-          })
-        })
+        that.setData({ showModal: false })
+        wx.showToast({ title: '授权成功', icon: 'none' });
+        this.triggerEvent('updateUser', e.detail) //myevent自定义名称事件，父组件中使用
+        // appCommon.toLogin(e.detail, function () {
+        //   that.setData({
+        //     showModal: false
+        //   })
+        // })
       }
     },
     bindNotAuth: function () {

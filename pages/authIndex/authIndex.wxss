@@ -1,0 +1,10 @@
+.avrImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.auth-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
