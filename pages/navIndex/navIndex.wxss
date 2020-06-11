@@ -1,0 +1,8 @@
+.van-button {
+  width: 100px;
+  margin: 10px;
+}
+.nav-title {
+  color: #ccc;
+  padding: 20px 20px;
+}

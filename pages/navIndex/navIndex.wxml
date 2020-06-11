@@ -1,3 +1,9 @@
 <view class="page index-box">
+  <view class="nav-title">动态导航栏</view>
+  <view wx:for="{{ canEditNav }}" wx:key="index">
+    <van-button size="normal" type="info">{{item.text}}</van-button>
+    <van-button size="normal" type="warning" data-type="0" data-idx="{{index}}" bindtap="refleshNav">添加</van-button>
+    <van-button size="normal" type="danger" data-type="1" data-idx="{{index}}" bindtap="refleshNav">删除</van-button>
+  </view>
 </view>
-<bottom-nav checkid="0"></bottom-nav>
+<bottom-nav checkid="0" newBottomList="{{newBottomList}}"></bottom-nav>

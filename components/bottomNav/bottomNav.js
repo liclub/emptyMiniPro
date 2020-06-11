@@ -7,6 +7,17 @@ Component({
     checkid: {
       type: String,
       value: ''
+    },
+    newBottomList: {
+      type: Array,
+      value() {
+        return []
+      },
+      observer: function (newVal, oldVal) {
+        this.data.bottomList = this.data.bottomList.filter(d => { return d.text === '首页' || d.text === '自定义' });
+        this.data.bottomList = this.data.bottomList.concat(newVal);
+        this.setData({ bottomList : this.data.bottomList})
+      }
     }
   },
   /**
@@ -51,7 +62,7 @@ Component({
    */
   methods: {
     bottomLinks: function (e) {
-      var index = e.currentTarget.dataset.index;
+      var index = e.ntTarget.dataset.index;
       var bottomList = this.data.bottomList;
       wx.redirectTo({ url: bottomList[index].pagePath })
     }

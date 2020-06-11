@@ -1,0 +1,30 @@
+<view id="set-look">
+	<view class="bodyLook" style="width:100%;height:140%;position:absolute;opacity:0;z-index:0;top:-200%">
+		<canvas class="bodyLook" canvas-id="myCanvas" style="width:100%;height:140%"/>
+	</view>
+	<view class="bodyLook" >
+		<image class="commonModal disnone" src="{{typeList[0]}}"></image>
+		<image bindtap="getLook"  class="makeLook" src="../../images/img/p3_xiangji.png"></image>
+		<image class="{{headstyle}} disnone" src="{{typeList[1]}}"></image>
+		<image class="{{clothesStyle}} disnone" src="{{typeList[2]}}"></image>
+		<image class="{{kuziStyle}} disnone" src="{{typeList[3]}}"></image>
+		<image style="top:{{redtop}}" class="{{taostyle}} disnone" src="{{typeList[4]}}"></image>
+		<image class="{{shosestyle}} disnone" src="{{typeList[5]}}"></image>
+		<image class="{{pakclass}} disnone" src="{{typeList[6]}}"></image>
+		<image class="yj disnone" src="{{typeList[7]}}"></image>
+		<image class="{{sstype}} disnone" src="{{typeList[8]}}"></image>
+		<image class="slog disnone" src="{{typeList[9]}}"></image>
+	</view>
+	<scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="typeLook">
+		<view wx:for="{{commonBeRight}}" wx:for-index="index" wx:for-item="item" bindtap="tapBeRight"
+		data-url="{{item.url}}" data-type="{{item.type}}" data-idx="{{index}}" data-class="{{item.paktype}}" data-sstype="{{item.sstype}}" class="{{item.itemView}}" data-skirtType="{{item.skirtType}}">
+			<image class="{{item.imgBfStyle}}" src="{{item.url}}"></image>
+		</view>
+	</scroll-view>
+	<scroll-view scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="mainLook" >
+		<view  class="girl-view" wx:for="{{commonRight}}" wx:for-index="index" wx:for-item="item" style="background:{{bgList[index]}};" bindtap="tapType" 
+		data-idx="{{index}}" data-type="{{item.type}}">  
+		 	<image class="{{item.imgClass}}" src="{{item.imgurl}}"></image>
+		</view>  
+	</scroll-view>
+</view>

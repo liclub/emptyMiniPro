@@ -1,0 +1,60 @@
+/* @import "../../commonCss/iconfont.wxss"; */
+page{height:100%}
+#home{
+	width:100%;
+	height:100%
+}
+.img-title{
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	height:150rpx;
+	margin-top:50rpx;
+	margin-bottom:50rpx;
+}
+.img-content{
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	height:56%;
+	margin-top: 10%;
+}
+.home-text{
+	color:#858585;
+	font-size:28rpx;
+	text-align:center;
+}
+.home-bottom{
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	overflow:hidden;
+	height:100rpx;
+	margin-top:30rpx;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+.home-bottom view{
+	width:30%;
+	height:30rpx;
+	text-align:center;
+	font-size:30rpx;
+	text-decoration-line:underline;
+	color:#191919
+}
+.home-bottom .look-view{
+	text-decoration-line:none;
+	font-size:28rpx;
+	font-weight:600;
+	height:70rpx;
+	line-height:70rpx;
+	background:#ff9d00;
+	margin-left:5%;
+	margin-right:5%;
+	position:relative;
+}
+.home-bottom .f-view{
+	padding-top:20rpx
+}

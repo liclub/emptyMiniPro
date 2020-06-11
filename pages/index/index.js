@@ -43,6 +43,9 @@ Page({
       case '6':
         App.redirectOverPage('/pages/swiperIndex/swiperIndex?type=1');
         return;
+      case '7':
+        App.redirectOverPage('/pages/changeIndex/changeIndex');
+        return;
     }
   },
   /**

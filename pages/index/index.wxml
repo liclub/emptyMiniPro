@@ -6,4 +6,5 @@
   <van-button type="default" block bindtap="switchTap" data-idx="4">长按图片保存</van-button>
   <van-button type="default" block bindtap="switchTap" data-idx="5">轮播图</van-button>
   <van-button type="default" block bindtap="switchTap" data-idx="6">canvas转图片保存至相册</van-button>
+  <van-button type="default" block bindtap="switchTap" data-idx="7">换装</van-button>
 </view>

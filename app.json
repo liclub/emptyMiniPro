@@ -6,7 +6,9 @@
     "pages/authIndex/authIndex",
     "pages/swiperIndex/swiperIndex",
     "pages/customerHeader/customerHeader",
-    "pages/webview/webview"
+    "pages/webview/webview",
+    "pages/setLook/setLook",
+    "pages/createLook/createLook"
   ],
   "window": {
     "backgroundTextStyle": "light",

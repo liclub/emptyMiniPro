@@ -1,0 +1,13 @@
+<view class="premiu-view" id="home">
+	<image class="img-content" src="../../images/img/p1_chahua.png"></image>
+	<view class="home-text">时尚风格千万种，你是哪一种？即刻解忧时尚基因</view>
+	<view class="home-text">朋友圈最潮装扮就是你！</view>
+	<view class="home-bottom">
+		<view class="f-view">造型排行</view>
+		<view class="look-view" bindtap="toNextPage">
+			<view style="position:absolute;width:100%;height:100%;border:1px solid #ff9d00;left:7rpx;top:5rpx;"></view>
+			开始变装
+		</view>
+		<view class="f-view">我的LOOK</view>
+	</view>	
+</view>

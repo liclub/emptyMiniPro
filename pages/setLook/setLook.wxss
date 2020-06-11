@@ -1,0 +1,299 @@
+page{height:100%;overflow-y:hidden;}
+#set-look{
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	overflow:hidden;
+	width:100%;
+	height:100%
+}
+.bodyLook{
+	width:60%;
+	height:100%;
+	position:relative;
+}
+.typeLook{
+	width:25%;
+	height:100%;
+}
+.mainLook{
+	width:15%;
+	height:100%;
+	background:#f2f3f2
+}
+.mainLook view{
+	width:100%;
+	height:11.1%;
+}
+.look-s1{
+	width:40%;
+	height:50%;
+	margin:30% 28%;
+}
+.look-s2{
+	width:42%;
+	height:34%;
+	margin:33% 29%;
+}
+.look-s3{
+	width:40%;
+	height:50%;
+	margin:25% 30%;
+}
+.look-s4{
+	width:42%;
+	height:24%;
+	margin:38% 29%;
+}
+.look-s5{
+	width:42%;
+	height:38%;
+	margin:31% 29%;
+}
+.look-s6{
+	width:56%;
+	height:38%;
+	margin:31% 22%;
+}
+.look-s7{
+	width:50%;
+	height:22%;
+	margin:39% 25%;
+}
+.commonModal{
+	width:50%;
+	height:70%;
+	position:absolute;
+	left:25%;
+	top:10%;
+}
+.makeLook{
+	width:33%;
+	position:absolute;
+	bottom:3%;
+	height:11%;
+	left:26%;
+}
+.headLook{
+	width:40%;
+	height:17%;
+	position:absolute;
+	left:30%;
+	top:0%;
+}
+.clothesLook{
+	width:53%;
+	left:23%;
+	position:absolute;
+	top:12%;
+	height:27%;
+
+}
+.pakbag1{
+	position:absolute;
+	top:12%;
+	width:20%;
+	height:17%;
+	left:18%;
+}
+.pakbag2{
+	position:absolute;
+	top:14%;
+	width:36%;
+	height:22%;
+	left:31%;
+	z-index:999;
+}
+.pakbag3{
+	position:absolute;
+	top:37%;
+	width:26%;
+	height:24%;
+	left:16%;
+}
+.kuzi{
+	position:absolute;
+	top:28%;
+	width:39%;
+	left:30%;
+	height:41%;
+}
+.disnone{
+	display:block
+}
+.shose{
+	position:absolute;
+	top:60%;
+	width:19%;
+	height:22%;
+	left:36%;
+}
+.yj{
+	position:absolute;
+	top:6%;
+	width:22%;
+	height:3%;
+	left:37%;
+}
+.qunzi{
+	position:absolute;
+	top:13%;
+	width:81%;
+	left:21%;
+	height:59%;
+	z-index:10;
+}
+.ss1{
+	position:absolute;
+	top:7%;
+	width:20%;
+	height:5%;
+	left:38%;
+}
+.ss2{
+	position:absolute;
+	top:0%;
+	width:70%;
+	height:11%;
+	left:14%;
+}
+.ss3{
+	position:absolute;
+	top:34%;
+	width:6%;
+	height:3%;
+	left:25%;
+}
+.ss4{
+	position:absolute;
+	top:13%;
+	width:16%;
+	height:5%;
+	left:41%;
+}
+.ss5{
+	position:absolute;
+	top:28%;
+	width:26%;
+	height:3%;
+	left:36%;
+}
+.slog{
+	position:absolute;
+	top:64%;
+	width:59%;
+	height:15%;
+	left:33%;
+}
+.itemview1{
+	width:100%;
+	height:160rpx;
+}
+.imgBfStyle1{
+	height:83%;
+	width:60%;
+	margin-left:20%;
+	margin-right:5%;
+	margin-top:18%;
+}
+.itemview2{
+	width:100%;
+	height:200rpx;
+}
+.imgBfStyle2{
+	height:100%;
+	width:71%;
+	margin-left:15%;
+	margin-right:5%;
+	margin-top:18%;
+
+}
+.itemview3{
+	width:100%;
+	height:200rpx;
+	margin-top:20%;
+}
+.imgBfStyle3{
+	height:100%;
+	width:43%;
+	margin-left:29%;
+	margin-right:5%;
+}
+.imgBfStyle4{
+	height:100%;
+	width:62%;
+	margin-left:29%;
+	margin-right:5%;
+}
+.itemview4{
+	width:100%;
+	height:190rpx;
+}
+.imgBfStyle5{
+	height:100%;
+	width:40%;
+	margin-left:29%;
+	margin-right:5%;
+}
+.itemview6{
+	width:100%;
+	height:190rpx;
+	margin-top:14%
+}
+.imgBfStyle6{
+	height:100%;
+	width:54%;
+	margin-left:26%;
+	margin-right:5%;
+}
+.itemview7{
+	width:100%;
+	height:66rpx;
+	margin-top:14%;
+
+}
+.bheadLook{
+	width:23%;
+	height:12%;
+	position:absolute;
+	left:37%;
+	top:0%;
+}
+.bclothesLook{
+	width:56%;
+	left:22%;
+	position:absolute;
+	top:11%;
+	height:28%;
+}
+.bkuzi{
+	position:absolute;
+	top:33%;
+	width:38%;
+	left:30%;
+	height:41%;
+}
+.btao{
+	position:absolute;
+	top:11% !important;
+	width:55%;
+	left:22%;
+	height:59%;
+	z-index:10;
+
+}
+.bshose{
+	position:absolute;
+	top:62%;
+	width:18%;
+	height:22%;
+	left:40%;
+}
+.pakbag4{
+	position:absolute;
+	top:39%;
+	width:45%;
+	height:24%;
+	left:12%;
+}
