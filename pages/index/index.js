@@ -9,6 +9,7 @@ encrypt.setPublicKey("MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzfKrgzOisGDgpPBspXb
 Page({
   /*页面的初始数据*/
   data: {
+    showQr: false
   },
   /**
    * 生命周期函数--监听页面加载
@@ -45,6 +46,9 @@ Page({
         return;
       case '7':
         App.redirectOverPage('/pages/changeIndex/changeIndex');
+        return;
+      case '8':
+        this.setData({ showQr: true })
         return;
     }
   },

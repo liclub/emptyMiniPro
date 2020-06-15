@@ -4,3 +4,7 @@
 .van-button--block {
   margin: 10px 0;
 }
+.noBorder-box .van-button--block {
+  border: none;
+  color: #fff;
+}
